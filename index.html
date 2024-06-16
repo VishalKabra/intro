@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Kabra - Commercial Manager (LPG)</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #333333;
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: normal;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        section h2 {
+            color: #004080;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333333;
+            color: #ffffff;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .photo {
+            float: left;
+            margin: 0 15px 15px 0;
+        }
+        .photo img {
+            width: 120px; /* Adjust as needed */
+            height: auto;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .clear {
+            clear: both;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        form input, form textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            background-color: #004080;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vishal Kabra</h1>
+        <p>Commercial Manager (LPG), AP & Telangana</p>
+    </header>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <div class="photo">
+                <img src="your-photo.jpg" alt="Vishal Kabra">
+            </div>
+            <p>I am working in the energy sector with Bharat Petroleum Corporation Ltd for the past 12 years, focusing on the LPG business unit. My expertise lies in managing commercial requirements for both industrial and retail clients, designing LPG Manifolds, and providing technical assistance and training on LPG usage and safety.</p>
+            <div class="clear"></div>
+        </section>
+        <section>
+            <h2>Services Offered</h2>
+            <ul>
+                <li>Supply of LPG in various package sizes (5 Kg, 19 Kg, 35 Kg, 47.5 Kg and 422 Kg).</li>
+                <li>Conversion from other polluting fuels to LPG.</li>
+                <li>Consultation on fuel selection and Design of LPG installation.</li>
+                <li>Safety inspections for LPG installations.</li>
+                <li>Training on LPG safety.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact Information</h2>
+	    <p>Vishal Kabra - Commercial Manager (LPG), Andhra Pradesh & Telangana</a></p>
+	    <p>Bharat Petroleum Corporation Ltd.</a></p>	
+            <p>Mobile: <a href="tel:+918551889900">8551889900</a></p>
+            <p>Email: <a href="mailto:vishalkabra@bharatpetroleum.in">vishalkabra@bharatpetroleum.in</a></p>
+        </section>
+        <section>
+            <h2>Inquiry Form</h2>
+            <form action="mailto:vishalkabra@bharatpetroleum.in" method="post" enctype="text/plain" onsubmit="return updateMailContent();">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="organisation">Name of Organisation:</label>
+                <input type="text" id="organisation" name="organisation" required>
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="Send Inquiry">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vishal Kabra. All rights reserved.</p>
+    </footer>
+    <script>
+        function updateMailContent() {
+            var name = document.getElementById('name').value;
+            var organisation = document.getElementById('organisation').value;
+            var mobile = document.getElementById('mobile').value;
+            var message = document.getElementById('message').value;
+
+            var mailContent = "Hello Vishal,\n\n" +
+                              "I am " + name + " from " + organisation + ".\n" +
+                              message + "\n\n" +
+                              "Regards,\n" +
+                              name + "\n" +
+                              mobile;
+
+            var mailtoLink = "mailto:vishalkabra@bharatpetroleum.in" +
+                             "?subject=Inquiry&body=" + encodeURIComponent(mailContent);
+
+            window.location.href = mailtoLink;
+            return false;
+        }
+    </script>
+</body>
+</html>
